@@ -4,6 +4,8 @@ package _02_smurf;
  *    Level 1
  */
 
+import javax.swing.JOptionPane;
+
 /* 
  * 1. Watch this Smurf cartoon: https://www.youtube.com/watch?v=7-RDGT5Lsp8 
  * 2. In a Runner class, make a Handy Smurf. Use the methods below to make him eat, and print his name.
@@ -31,12 +33,37 @@ public class Smurf {
 	// Papa Smurf wears a red hat, all the others are white.
 	public String getHatColor() {
 		// 3. Fill in this method
-		return "";
+		
+		
+	 String HatColor ;
+	 
+	 if(name.equals("Papa"))
+	 {
+		 HatColor = "red";
+		 
+	 }
+	 
+	 else {
+		 HatColor= "white";
+	 }
+		return HatColor;
 	}
 
 	// Smurfette is the only female Smurf.
 	public String isGirlOrBoy() {
 		// 4. Fill in this method
+		
+		String gender;
+		
+		if(name.equals("Smurfette"))
+		{
+			gender = "female";
+		}
+		else
+		{
+			gender = "male"; 
+		}
+		
 		return "";
 	}
 
