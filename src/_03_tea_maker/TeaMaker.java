@@ -4,11 +4,26 @@ package _03_tea_maker;
  *    Level 1
  */
 
+import _03_tea_maker.Kettle.Water;
+
 public class TeaMaker {
 
 	/* Figure out how to make a cup of tea in this runner class, using the other classes below */
+	
+public static void main(String[]args)	
+{
+TeaBag Green = new TeaBag("Green");
+Kettle Water = new Kettle();
+Cup cup = new Cup();
+
+
+Water.boil();
+cup.makeTea(Green, Water.getWater());
+}
 
 }
+
+
 
 class TeaBag {
 
@@ -40,6 +55,8 @@ class Kettle {
 	void boil() {
 		this.water.isHot = true;
 	}
+	
+	
 
 	class Water {
 
@@ -65,5 +82,6 @@ class Cup {
 	}
 
 }
+
 
 

@@ -23,7 +23,7 @@ public class Smurf {
 	}
 
 	public String getName() {
-		return "My name is " + name + " Smurf.";
+		return "My name is " + name + " Smurf";
 	}
 
 	public void eat() {
@@ -46,7 +46,10 @@ public class Smurf {
 	 else {
 		 HatColor= "white";
 	 }
-		return HatColor;
+	
+	 
+	 return HatColor;
+		
 	}
 
 	// Smurfette is the only female Smurf.
@@ -64,7 +67,7 @@ public class Smurf {
 			gender = "male"; 
 		}
 		
-		return "";
+		return gender;
 	}
 
 }
