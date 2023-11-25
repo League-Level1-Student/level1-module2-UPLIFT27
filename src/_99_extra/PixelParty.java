@@ -20,7 +20,28 @@ import javax.swing.JPanel;
  */
 
 
+
 public class PixelParty {
+	
+	public static void main(String[]args)
+	{
+		
+	PixelParty party = new PixelParty();
+		
+		party.setColor(173, 216, 230);
+		party.drawRectangle(100, 10, 200, 20);
+		party.drawCircle(200, 200, 100);
+		party.drawTriangle(200,10,120,150,160,100);
+		
+		
+
+		
+		party.saveImage();
+		party.displayImage();
+		
+	}
+
+	
 	public static int BLACK = getColor(255, 0, 0, 0);
 	public int currentColor = BLACK;
 	
