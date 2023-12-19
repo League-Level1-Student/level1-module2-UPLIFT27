@@ -23,7 +23,7 @@ public class Minion {
 	{
 		name = newname;
 	}
-	public int eyes()
+	public int getEyes()
 	{
 		return eyes;
 	}
@@ -31,9 +31,20 @@ public class Minion {
 	{
 		eyes= neweyes;
 	}
-	public String getColor(String newcolor)
+	public String getColor()
 	{
-		color= newcolor;
+		return color;
 	}
-	public void setColor(S)
+	public void setColor(String newcolor)
+	{
+		color = newcolor;
+	}
+	public String getMaster()
+	{
+		return master;
+	}
+	public void setMaster(String newMaster)
+	{
+		master = newMaster;
+	}
 }
